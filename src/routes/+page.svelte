@@ -9,12 +9,9 @@
      // grab the user store
      const currentUser = getContext('user');
 
-     console.log('first load', $currentUser)
-     
      onMount(async () => {
           if ($currentUser === null) {
-               // goto('/signup');
-               location.href = '/signup';
+               goto('/signup');
           }
           if ($currentUser) {
                // Get all the workouts from the server
