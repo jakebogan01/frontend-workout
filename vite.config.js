@@ -5,7 +5,7 @@ export default defineConfig({
 	plugins: [sveltekit()],
 	server: {
 		proxy: {
-		    '/api': 'http://localhost:4000',
+		    '/api': 'https://backend-workout.vercel.app',
 		},
 	 },
 });
