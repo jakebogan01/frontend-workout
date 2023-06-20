@@ -10,6 +10,9 @@
      const currentUser = getContext('user');
      
      onMount(async () => {
+          if ($currentUser === null) {
+               goto('/signup');
+          }
           if ($currentUser) {
                // Get all the workouts from the server
                const response = await fetch('https://backend-workout.vercel.app/api/workouts', {
@@ -24,8 +27,6 @@
                     // Add the new workout to the store
                     Workouts.set([data]);
                }
-          } else {
-               goto('/signup');
           }
      });
 </script>
