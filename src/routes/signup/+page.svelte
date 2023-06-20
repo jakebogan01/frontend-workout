@@ -17,7 +17,7 @@
           error = null;
 
           // // Send the data to the server
-          const response = await fetch('/api/user/signup', {
+          const response = await fetch('https://backend-workout.vercel.app/api/user/signup', {
                method: 'POST',
                headers: {
                     'Content-Type': 'application/json',

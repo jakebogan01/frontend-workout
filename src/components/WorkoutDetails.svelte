@@ -15,7 +15,7 @@
           }
 
           // Delete the workout from the server
-          const response = await fetch(`/api/workouts/${workout._id}`, {
+          const response = await fetch(`https://backend-workout.vercel.app/api/workouts/${workout._id}`, {
                method: 'DELETE',
                headers: {
                     'Content-Type': 'application/json',
