@@ -3,9 +3,9 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
 	plugins: [sveltekit()],
-	server: {
-		proxy: {
-		    '/api': 'https://backend-workout.vercel.app',
-		},
-	 },
+	// server: {
+	// 	proxy: {
+	// 	    '/api': 'http://localhost:4000',
+	// 	},
+	//  },
 });
