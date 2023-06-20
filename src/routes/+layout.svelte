@@ -11,9 +11,6 @@
           const user = writable(JSON.parse(localStorage.getItem('user')));
           // set user store
           setContext('user', user);
-          if (user === null) {
-               goto('/signup');
-          }
      }
 </script>
 
