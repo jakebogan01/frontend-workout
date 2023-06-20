@@ -25,7 +25,7 @@
           inputValues.slug = inputValues.title.toLowerCase().replace(/ /g, '-');
 
           // Send the data to the server
-          const response = await fetch('https://backend-workout.vercel.app/api/workouts', {
+          const response = await fetch('/api/workouts', {
                method: 'POST',
                headers: {
                     'Content-Type': 'application/json',
