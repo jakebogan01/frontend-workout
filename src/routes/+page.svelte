@@ -8,6 +8,8 @@
 
      // grab the user store
      const currentUser = getContext('user');
+
+     console.log('first load', $currentUser)
      
      onMount(async () => {
           if ($currentUser === null) {
