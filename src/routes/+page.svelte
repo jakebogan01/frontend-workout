@@ -11,7 +11,8 @@
      
      onMount(async () => {
           if ($currentUser === null) {
-               goto('/signup');
+               // goto('/signup');
+               location.href = '/signup';
           }
           if ($currentUser) {
                // Get all the workouts from the server
