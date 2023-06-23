@@ -1,9 +1,15 @@
 <script>
-     import { getContext } from 'svelte';
+     import { onMount, getContext } from 'svelte';
      import { goto } from '$app/navigation';
 
      // grab the user store
      const currentUser = getContext('user');
+
+     onMount(() => {
+          if ($currentUser) {
+               goto('/');
+          }
+     })
 
      let inputValues = {
           email: '',

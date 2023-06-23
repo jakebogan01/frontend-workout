@@ -1,14 +1,8 @@
 <script>
-     import { onMount, getContext } from 'svelte';
+     import { getContext } from 'svelte';
      import { goto } from '$app/navigation';
      // grab the user store
      const currentUser = getContext('user');
-
-     onMount(() => {
-          if ($currentUser) {
-               goto('/');
-          }
-     })
 
      const handleLogout = () => {
           // Update user in local storage
