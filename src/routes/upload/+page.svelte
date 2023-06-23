@@ -4,7 +4,7 @@
 
      // grab the user store
      const currentUser = getContext('user');
-     let url = '';
+     // let url = '';
 
      onMount(() => {
           if (!$currentUser) {
@@ -18,8 +18,8 @@
                body: new FormData(e.target),
           });
           const data = await response.json();
-          console.log(data, data.image)
-          url = data.image;
+          console.log(data)
+          // url = data.image;
      }
 </script>
 
@@ -30,7 +30,7 @@
      <input type="submit">
 </form>
 
-<img src="https://backend-workout.vercel.app/api/images/{url}" alt="">
+<!-- <img src="https://backend-workout.vercel.app/api/images/{url}" alt=""> -->
 
 <style>
      img {
